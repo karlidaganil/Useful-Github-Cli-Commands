@@ -1,0 +1,30 @@
+git add test.txt
+git config --global user.name "anıl karlıdağ"
+git config --global user.email "anilkarlidag@zanhagrup.com"
+git log = branchde atılan commitleri listeler
+git add . = eğer yeni eklediğin dosya ve var olan bir dosyada değişiklik yaptıysan commit etmeden önce bu komutu kullanarak dosyaların hepsini track ediyoruz
+git branch -m newName = bulunduğun branch in ismini değiştirir.
+git checkout -b branchName = yeni bir branch oluşturur ve o branch e geçer.
+git checkout branchName = branch değiştirir.
+git branch = bütün branchları listeler.
+git merge branchName = başka branchdakileri currrent branch a merge eder.
+git reset --hard HEAD~1 = 1 commit geriye gider.
+git push --force = 1 commit geriye gittikten sonra localden silinen commiti remote dan silmek için kullanılır.Komutun işe yaraması için önce localde bir önceki commite gitmek gerekir.
+git branch -D branchName = Branch'i localden siler.
+git push origin --delete branchName = Remote repodan branch'i siler.
+git checkout -- . = Branch de değişiklikler yaptıktan sonra bunu yazarsak en son atılan konumdaki haline getirir kendini.Aynı vs codedaki discard all gibi.
+git stash -m "stash message" = değişikliklerini stash eder.
+git stash list = stash edilmiş değişikleri listeler.
+git stash pop stash@{i} = index numarasına göre stash edilmiş değişikliği uygular ve o stash i siler.
+git checkout <sha1> = sha1 koduna göre o commite gider.
+git cherry-pick <sha1> = sha1 koduna göre yapılan commiti kendine uygular ve commit eder.
+{
+git add .
+git commit -m "message"
+git push
+}
+{
+//remote repoya localden projeyi pushlamak
+git remote add origin url
+git push origin branchName
+}
