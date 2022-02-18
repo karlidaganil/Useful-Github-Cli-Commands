@@ -18,6 +18,7 @@ git stash list = stash edilmiş değişikleri listeler.
 git stash pop stash@{i} = index numarasına göre stash edilmiş değişikliği uygular ve o stash i siler.
 git checkout <sha1> = sha1 koduna göre o commite gider.
 git cherry-pick <sha1> = sha1 koduna göre yapılan commiti kendine uygular ve commit eder.
+git switch -c "branch-adı" = Yeni bir branch oluşturur ve tüm değişiklikleri yeni branche taşır
 {
 git add .
 git commit -m "message"
